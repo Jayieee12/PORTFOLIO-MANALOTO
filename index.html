@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<title>Manaloto Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50%;
+}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-black" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="images/logo2.jpg" style="width:70%;" class="center"><br><br>
+    <h4><b>Joel S. Manaloto Jr.</b></h4>
+    <p class="w3-text-grey">Swabe28@gmail.com</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+
+  </div>
+  <div class="w3-panel w3-large">
+    <a href="https://www.facebook.com/joel.manaloto.3" class="fa fa-facebook-official w3-hover-opacity"></a>
+    <a href="https://www.instagram.com/" class="fa fa-instagram w3-hover-opacity"></a>
+    <a href="https://twitter.com/" class="fa fa-twitter w3-hover-opacity"></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="images/logo2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-16" id="about">
+    <div class="w3-col m6">
+      <img src="images/logo.jpg" alt="Me" style="width:50%" class="center" >
+    </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>About Me</b></h4>
+    <p>Hi Iam Joel S. Manaloto Jr. I'm a senior student at Central Luzon State University taking a Bachelor of Science in Information Technology., a Front & Back End Developer and also a Game Developer that making a Private Games such us Ran Online & Cabal Online, I also doing python games that will shown in my portfolio page i also like to practicing coding in my free time and about me i really like doing coding in my highschool days and i want to know lot of new knowledge about coding in my future and also focus in my IT journey  </p>
+    <hr>
+    <p>
+      
+      <a href ="resume.html"><button class="w3-button w3-black w3-padding-large w3-margin-top w3-margin-bottom">
+        <i class="fa fa-download w3-margin-right"></i>Download Resume
+      </button></a>
+    </p>
+    <hr>
+
+    <h1><b>My Portfolio</b></h1>
+  </header>
+  
+ 
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/1.jpg" alt="TRAVEL WEBSITE" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>SafeSkies Travel</b></p>
+        <p>Travel Website Home</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/2.jpg" alt="TRAVEL 2" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>SafeSkies Destination Booking</b></p>
+        <p>Destination Booking system</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="images/5.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>SLP TO THE MOON</b></p>
+        <p>2 player Develop Game</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>SafeSkies Admin Portal</b></p>
+        <p>Admin Portal for The website</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/4.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>SafeSkies Dashboard</b></p>
+        <p>Admin Dashboard Using PHP AND MYSQL</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="images/6.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>BreakDown Game</b></p>
+        <p>My First Ever Python Game</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Third photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/7.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Twice FanPage</b></p>
+        <p>Complete Detailed Twice Fan page</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/8.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>ITFLIX MOVIE reservation</b></p>
+        <p>Fully Reservation Movie and Review</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="images/9.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>ITFLIX Log in Portal</b></p>
+        <p>Account Client PHP functional Portal</p>
+      </div>
+    </div>
+  </div> 
+
+ <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-black">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Swabe28@gmail.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>San Jose City,NE, PH</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>09359608975</p>
+      </div>
+    </div>
+
+ 
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
