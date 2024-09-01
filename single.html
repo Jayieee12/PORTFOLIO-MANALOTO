@@ -376,7 +376,7 @@
 
 
 
-	  all example will generate
+	all example will generate
 
 
 php artisan make:filament-resource User --generate
@@ -385,6 +385,8 @@ php artisan make:filament-resource User --generate
 creating an policy for roles user or admin
 
 php artisan make:policy UserPolicy --model=User
+
+return $user->isAdmin();
 
 
 
@@ -453,7 +455,7 @@ const ROLES = [
 
 public function canAccessPanel(Panel $panel): bool
 {
-    return $this->can('view-admin',User::class);
+    return $this->isAdmin() || $this->isEditor();
 }
 
 public function isAdmin(){
@@ -464,6 +466,7 @@ public function isEditor(){
     return $this->role === self::ROLE_EDITOR;
 }
 
+forms-  ->options(User::ROLES)
 
 ---------------------------------
 //database
@@ -481,12 +484,21 @@ $table->dropColumn('role');
 composer require laravel/fortify
 
 
-
-
 -----------------------------------
 //show image
 
 php artisan storage:link
+
+
+
+ protected function getRedirectUrl(): string
+    {
+        return $this->getResource()::getUrl('index');
+    } 
+
+
+return $user->isAdmin();
+
 
 
   </body>
